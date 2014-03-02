@@ -32,7 +32,7 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'styles/app.css': /^(app|vendor|bower_components)/
+        'styles/app.css': /^(app|bower_components|vendor\/(?!node))/
       order:
         before: ['bower_components/normalize-css/normalize.css']
 
