@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "cake server",
-    "test": "./node_modules/.bin/testem"
+    "test": "./node_modules/.bin/testem",
+    "postinstall": "bower install; cake build"
   },
   "dependencies": {
     "brunch": "=1.7.13",
@@ -34,7 +35,8 @@
     "adm-zip": "~0.4.4",
     "github": "~0.1.13",
     "digest-brunch": "~1.0.6",
-    "bower": "~1.2.8"
+    "bower": "~1.2.8",
+    "express": "~3.4.8"
   },
   "devDependencies": {
     "qunitjs": "*",
